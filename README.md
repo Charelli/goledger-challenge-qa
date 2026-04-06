@@ -182,3 +182,28 @@ Place the test files inside the respective `api/` or `web/` directory and includ
 ## Complete the challenge
 
 To complete the challenge, send us the link to your **forked repository**. Make sure your bug report is committed and that any optional test code includes run instructions.
+
+---
+
+## Automated Tests
+
+End-to-end tests written with Cypress covering BUG-001 and BUG-002.
+
+### Requirements
+
+- Node.js 18+
+- API running on `http://localhost:8080`
+- Web running on `http://localhost:3000`
+
+### Install
+```bash
+cd web
+npm install cypress --save-dev
+```
+
+### Run
+```bash
+npx cypress open
+```
+
+Select **E2E Testing** and run `create-book.cy.js`.
